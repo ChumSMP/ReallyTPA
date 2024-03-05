@@ -1,0 +1,25 @@
+#
+# Myles "Mellurboo" Wilson 2023
+#
+
+PlayerNotFound: "§cPlayer Not Found or they're not online"
+recipientPrompt: "§e Has requested to teleport to you, use /tpaccept or /tpdeny"
+senderPrompt: "§eTeleport request sent to "
+noRequests: "§cYou have no pending request(s)"
+
+requestAcceptedSender: "§e Has accepted your TP request"
+recipientAccepted: "§e Teleport Request Accepted"
+playerNotOnline: "§c the player who sent this request is no longer online!"
+senderDeniedTPA: "§c Has denied your teleport request"
+recipientDeniedTPA: "§cTeleport request denied"
+senderNotEnoughExp: "§cYou do not have enough exp to complete this request, cost: "
+
+exsistingRequest: "§cYou both already have a pending request, do /tpcancel before making a new request"
+closedAllRequests: "§cYour TPA requests have been successfully closed"
+recipientCancel: "§cA teleport request was closed by: "
+
+adminClosedAllRequests: "§cAll teleport requests were closed by an Admin"
+configReloaded: "§eChumTPA config reloaded!"
+
+levelCost: 3
+clearexpbar: true

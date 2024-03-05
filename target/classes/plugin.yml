@@ -1,0 +1,17 @@
+name: chumtpa
+version: '1.2'
+main: com.mellurboo.chumtpa.Chumtpa
+api-version: '1.20'
+commands:
+  tpdeny:
+    description: no tp
+  tpaccept:
+    description: accept a tpa
+  tpa:
+    description: tpa request
+  tpcancel:
+    description: cancels the players tpa requests
+  tpacloseall:
+    description: admin command to close all tpa requests
+  tpreload:
+    description: reloads the tpa config
