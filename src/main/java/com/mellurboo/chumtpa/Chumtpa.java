@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.UUID;
 
 public final class Chumtpa extends JavaPlugin implements Listener {
-    private Map<UUID, UUID> teleportRequests = new HashMap<>();  // this stores all of the requests
+    private Map<UUID, UUID> teleportRequests = new HashMap<>();  // this stores all requests
 
     public String playerNotFound; // the player for the request couldn't be found
     public String recipientPrompt; // shown when you receive a tpa request
@@ -68,8 +68,6 @@ public final class Chumtpa extends JavaPlugin implements Listener {
         levelCost = config.getInt("levelCost",27);
         clearexpbar = config.getBoolean("clearexpbar", true);
     }
-
-    // ... (other methods)
 
     public Map<UUID, UUID> getTeleportRequests() {
         return teleportRequests;

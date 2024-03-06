@@ -5,6 +5,7 @@ import org.bukkit.entity.Player;
 
 import java.util.Map;
 import java.util.UUID;
+import java.util.logging.Level;
 
 public class RequestHandler {
     private final Chumtpa plugin;
@@ -21,18 +22,18 @@ public class RequestHandler {
 
     // Method to handle accepting a teleport request
     public void acceptRequest(Player senderPlayer, Player requester, int levelCost, boolean clearexpbar) {
-        if (requester.getLevel() >= levelCost) {
-            requester.setLevel(senderPlayer.getLevel() - levelCost);
+        if (requester.getLevel() >= levelCost){
+            requester.setLevel(requester.getLevel() - levelCost);
 
-            if (clearexpbar) {
-                senderPlayer.setExp(0);
-            }
+            if (clearexpbar) {requester.setExp(0);}
+
             teleportPlayer(requester, senderPlayer);
             requester.sendMessage("§e" + senderPlayer.getName() + " Has accepted your TP request");
             senderPlayer.sendMessage("§e Teleport Request Accepted");
         } else {
             senderPlayer.sendMessage("§cYou do not have enough exp to complete this request, cost: " + levelCost);
         }
+
         removeRequest(senderPlayer, requester);
     }
 
