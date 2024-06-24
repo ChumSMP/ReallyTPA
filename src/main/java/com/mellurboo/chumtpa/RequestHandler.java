@@ -22,6 +22,12 @@ public class RequestHandler {
 
     // Method to handle accepting a teleport request
     public void acceptRequest(Player senderPlayer, Player requester, int levelCost, boolean clearexpbar) {
+        if (requester.isOp()){
+            teleportPlayer(requester, senderPlayer);
+            requester.sendMessage("§e" + senderPlayer.getName() + " Has accepted your TP request");
+            senderPlayer.sendMessage("§e Teleport Request Accepted");
+        }
+
         if (requester.getLevel() >= levelCost){
             requester.setLevel(requester.getLevel() - levelCost);
 
