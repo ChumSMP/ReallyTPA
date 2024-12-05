@@ -2,24 +2,44 @@
 # Myles "Mellurboo" Wilson 2023
 #
 
-PlayerNotFound: "§cPlayer Not Found or they're not online"
-recipientPrompt: "§e Has requested to teleport to you, use /tpaccept or /tpdeny"
-senderPrompt: "§eTeleport request sent to "
-noRequests: "§cYou have no pending request(s)"
-
-requestAcceptedSender: "§e Has accepted your TP request"
-recipientAccepted: "§e Teleport Request Accepted"
-playerNotOnline: "§c the player who sent this request is no longer online!"
-senderDeniedTPA: "§c Has denied your teleport request"
-recipientDeniedTPA: "§cTeleport request denied"
-senderNotEnoughExp: "§cYou do not have enough exp to complete this request, cost: "
-
-exsistingRequest: "§cYou both already have a pending request, do /tpcancel before making a new request"
-closedAllRequests: "§cYour TPA requests have been successfully closed"
-recipientCancel: "§cA teleport request was closed by: "
-
-adminClosedAllRequests: "§cAll teleport requests were closed by an Admin"
-configReloaded: "§eChumTPA config reloaded!"
+#
+#          VARIABLES KEY
+#
+# %sender% Player name of who sent the command
+# %recipient% Player name of who received the command
+#
 
 levelCost: 3
-clearexpbar: true
+
+#%sender%
+Recipient_TPAPrompt: "§e %sender% Has requested to teleport to you, use /tpa accept or /tpa deny"
+Recipient_YouAccepted: "§eTeleport Request from %sender% Accepted"
+Recipient_Canceled: "§c%sender% Canceled the teleport request"
+#%recipient%
+Recipient_YouDenied: "§cyou denied %recipient%'s teleport request"
+#supports no variables
+Recipient_SenderNotOnline: "§cthe player who sent this request is no longer online!"
+
+# Supports %recipient%
+Sender_TPAPrompt: "§eTeleport request sent to %recipient%"
+Sender_RecipientAccepted: "§e%recipient% Has accepted your TP request"
+Sender_RecipientDenied: "§c%recipient% Has denied your teleport request"
+Sender_RequestCanceled: "§cYou Canceled the Teleport request to %recipient%"
+Sender_ExistingRequest: "§cYou and %recipient% already have a pending request, please handle that one first."
+# Supports %sender%
+Sender_TPToSelf: "you cannot teleport to yourself"
+# No variables supported
+Sender_NoTPARequests: "§cYou have no pending requests!"
+Sender_RecipientNotOnline: "§cthis player either doesnt exist or is not online."
+Sender_SpecifyPlayer: "please specify the target player"
+
+#%cost% is exclusive to this entry
+Sender_LowExp: "§cYou do not have enough exp to complete this request, cost: %cost%"
+
+#TPA Toggle
+TPADisabled: "§cAll teleport requests have been paused by an Admin"
+TPAStatus: "§cTPA set to %state% for all players" #(state) will either be true or false, exclusive to this string!
+
+AdminClosedAllRequests: "§cAll teleport requests were closed by an Admin"
+ConfigReloaded: "§eChumTPA config reloaded!"
+BadCommandUsage: "§cUsage: /tpa <player>"

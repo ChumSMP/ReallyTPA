@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="chumtpa:jar">
-    <output-path>$PROJECT_DIR$/COMP</output-path>
-    <root id="archive" name="chumtpa.jar">
-      <element id="module-output" name="chumtpa" />
-    </root>
-  </artifact>
-</component>

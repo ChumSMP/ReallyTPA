@@ -1,0 +1,5 @@
+org\mellurboo\advancedPlayerTP\commands\tpa.class
+org\mellurboo\advancedPlayerTP\AdvancedPlayerTP.class
+org\mellurboo\advancedPlayerTP\impl\MessageFormat.class
+org\mellurboo\advancedPlayerTP\impl\RequestHandler.class
+org\mellurboo\advancedPlayerTP\commands\tpaTabComplete.class

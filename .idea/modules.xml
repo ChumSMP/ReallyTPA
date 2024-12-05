@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/chumtpa.iml" filepath="$PROJECT_DIR$/chumtpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReallyTPA.iml" filepath="$PROJECT_DIR$/ReallyTPA.iml" />
     </modules>
   </component>
 </project>
