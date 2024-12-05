@@ -1,7 +1,0 @@
-name: ReallyTPA
-version: '1.0-SNAPSHOT'
-main: org.mellurboo.advancedPlayerTP.AdvancedPlayerTP
-api-version: '1.21'
-commands:
-  tpa:
-    description: Teleport Functionality
