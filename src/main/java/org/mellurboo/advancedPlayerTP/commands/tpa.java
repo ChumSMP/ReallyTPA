@@ -157,7 +157,7 @@ public class tpa implements CommandExecutor {
 
     /// Allow admins to just clear all requests
     private void clearAllRequests(Player sender){
-        if (sender.hasPermission("AdvancedPlayerTP.admin")){
+        if (sender.hasPermission("ReallyTPA.admin")){
             plugin.getTeleportRequests().clear();
             Bukkit.broadcastMessage(plugin.AdminClosedAllRequests);
         }
@@ -165,7 +165,7 @@ public class tpa implements CommandExecutor {
 
     /// Config reloading
     private void reloadConfig(Player sender){
-        if (sender.hasPermission("AdvancedPlayerTP.admin")){
+        if (sender.hasPermission("ReallyTPA.admin")){
             plugin.reloadConfig();
             sender.sendMessage(plugin.PluginConfigReloaded);
         }
@@ -173,7 +173,7 @@ public class tpa implements CommandExecutor {
 
     /// Admin TPA Toggle
     private void toggleTPA(Player sender){
-        if (sender.hasPermission("AdvancedPlayerTP.admin") || sender.isOp()){
+        if (sender.hasPermission("ReallyTPA.admin") || sender.isOp()){
             if (plugin.tpaEnabled){
                 plugin.tpaEnabled = false;
                 messageHandler.sendFormattedMessage(plugin.TPAStatus, "%state%", "false", sender);

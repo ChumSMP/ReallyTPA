@@ -18,7 +18,7 @@ public class tpaTabComplete implements TabCompleter {
             completions.add("deny");
             completions.add("cancel");
 
-            if (sender.hasPermission("AdvancedPlayerTP.admin") || sender.isOp()) {
+            if (sender.hasPermission("ReallyTPA.admin") || sender.isOp()) {
                 completions.add("clear");
                 completions.add("reload");
                 completions.add("toggle");
